@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index (BMI) Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form>
+        <div class="row">
+            <div class="content">
+                <h2>Body Mass Index (BMI) Calculator</h2>
+                <div>
+                    <label for="weight">
+                        Your weight (Required)<br>
+                    </label>
+                    <input type="number" name="weight" id="weight" value="0">
+                </div>
+                <div>
+                    <label for="height">
+                        Your height (Required)<br>
+                    </label>
+                    <input type="number" name="height" id="height" value="0">
+                </div>
+                <p>
+                    <input type="submit" name="submitButton" id="submitButton" value="Calculate My BMI">
+
+                </p>
+                <p id="message"></p>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<!-- <script src="jquery.js"></script> -->
+<script src="script.js"></script>
+
+</html>

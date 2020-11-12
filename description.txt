@@ -1,0 +1,36 @@
+Requirements
+Create a Body Mass Index (BMI) calculator.
+
+Allow the user to enter their height in inches and weight in pounds.
+
+Output their numeric BMI and into which category (underweight, normal, severely overweight, etc.) they fall.
+
+This form must be validated to ensure that:
+
+All inputs are required
+All inputs are numeric
+All inputs are in a valid range
+Weight between 88 and 353 pounds
+Height between 59 and 79 inches
+See the rubric below for grading criteria.
+
+ 
+
+Submission Instructions
+Publish your site to GitHub and Netlify.
+Submit the URL of your GitHub repository.
+Include your Netlify URL as a comment.
+ 
+
+How to Calculate BMI
+Formula and categories can be found at: http://en.wikipedia.org/wiki/Body_mass_index (Links to an external site.)
+
+ 
+
+Testing
+To test your application, a person who is 5'2" is:
+
+Underweight (BMI 18.3) at 100 pounds
+Healthy (BMI 22.9) at 125 pounds
+Overweight (BMI 27.4) at 150 pounds
+Obese (BMI 32.0) at 175 pounds
