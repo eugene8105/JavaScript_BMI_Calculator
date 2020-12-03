@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+    // e.preventDefault();
     // add event handlers
 
     // $("#tpipLength").click(showPopup);
@@ -38,7 +39,9 @@ $(document).ready(function () {
         }
     };
 
-    function bacCalc() {
+    var messageOutput = "";
+
+    function bmiCalc() {
         // get number of beer person had
         var weight = parseInt($("#weight").val());
 
@@ -48,17 +51,26 @@ $(document).ready(function () {
         // calculation
         // Formula: 703 x weight (lbs) / [height (in)]2
 
-        var calcBMI = 703 * weight / (height * 2);
+        var calcBMI = (weight / (height * height)) * 703;
+
+
+        if (calcBMI < 25) {
+            messageOutput = "Normal";
+        } else if (calcBMI >= 25 && calcBMI <= 29) {
+            messageOutput = "Overweight";
+        } else if (calcBMI >= 30) {
+            messageOutput = "Obese";
+        }
 
         // output on the screen
-        $("#message").text(`Your BMI is ${calcBMI}`);
+        $("#message").text(`Your BMI is ${calcBMI.toFixed(2)} - you ${messageOutput}`);
 
         // $("p.output").show();
 
     }
 
     $("form").validate({
-        submitHandler: bacCalc,
+        submitHandler: bmiCalc,
         rules: myRules,
         message: myMessages
     })
